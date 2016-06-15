@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/javascript" src="math.min.js"></script>
+    <script type="application/javascript" src="string.min.js"></script>
+    <script type="application/javascript">
+        function celsiusToFahrenheit() {
+            let c = S(document.getElementById("celsiusText").value).toFloat();
+            let f = c * 1.8000 + 32;
+            document.getElementById("cResult").value = math.format(f, {precision: 7});
+        }
+
+        function fahrenheitTocelsius() {
+            let f = S(document.getElementById("fahrenheitText").value).toFloat();
+            let c = (f - 32) / 1.8000;
+            document.getElementById("fResult").value = math.format(c, {precision: 7});
+        }
+    </script>
+</head>
+<body>
+<h3>Celsius to Fahrenheit</h3>
+<input type="text" id="celsiusText" /><input id="cResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="celsiusToFahrenheit()"/>
+
+<br/>
+<h3>Fahrenheit to Celsius</h3>
+<input type="text" id="fahrenheitText" /><input id="fResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="fahrenheitTocelsius()"/>
+</body>
+</html>

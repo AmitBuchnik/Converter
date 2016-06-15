@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/javascript" src="math.min.js"></script>
+    <script type="application/javascript" src="string.min.js"></script>
+    <script type="application/javascript">
+        function inchToCM() {
+            let miles = S(document.getElementById("milesText").value).toFloat();
+            let km = miles / 0.62137;
+            document.getElementById("kmResult").value = math.format(km, {precision: 7});
+        }
+
+        function cmToInch() {
+            let km = S(document.getElementById("kmText").value).toFloat();
+            let miles = km * 0.62137;
+            document.getElementById("milesResult").value = math.format(miles, {precision: 7});
+        }
+    </script>
+</head>
+<body>
+<h3>Miles to KM</h3>
+<input type="text" id="milesText" /><input id="kmResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="inchToCM()"/>
+
+<br/>
+<h3>CM to Inch</h3>
+<input type="text" id="kmText" /><input id="milesResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="cmToInch()"/>
+</body>
+</html>
