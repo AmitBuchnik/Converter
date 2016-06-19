@@ -6,30 +6,18 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="application/javascript" src="math.min.js"></script>
     <script type="application/javascript" src="string.min.js"></script>
-    <script type="application/javascript">
-        function inchToCM() {
-            let inch = S(document.getElementById("inchText").value).toFloat();
-            let cm = inch * 2.54;
-            document.getElementById("cmResult").value = math.format(cm, {precision: 7});
-        }
-
-        function cmToInch() {
-            let cm = S(document.getElementById("cmText").value).toFloat();
-            let inch = cm * 0.39370079;
-            document.getElementById("inchResult").value = math.format(inch, {precision: 7});
-        }
-    </script>
+    <script type="application/javascript" src="simpleconverter.js"></script>
 </head>
 <body>
 <h3>Inch to CM</h3>
 <input type="text" id="inchText" /><input id="cmResult" class="result" type="text" readonly />
 <br/>
-<input type="button" value="Convert" onclick="inchToCM()"/>
+<input type="button" value="Convert" onclick="simpleConverter.inchToCM()"/>
 
 <br/>
 <h3>CM to Inch</h3>
 <input type="text" id="cmText" /><input id="inchResult" class="result" type="text" readonly />
 <br/>
-<input type="button" value="Convert" onclick="cmToInch()"/>
+<input type="button" value="Convert" onclick="simpleConverter.cmToInch()"/>
 </body>
 </html>
