@@ -1,5 +1,9 @@
-h3 {color: blue}
+/* ----------------- Convert pages ----------------- */
+/* Headers */
+h3 {color: blue;}
 
-.result {margin-left: 10px}
+/* Results  */
+.result {margin-left: 10px;}
 
-input[type="button"] {margin-top: 7px}
+/* Buttons*/
+input[type="button"] {margin-top: 7px;}
