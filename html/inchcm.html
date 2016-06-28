@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/javascript" src="math.min.js"></script>
+    <script type="application/javascript" src="string.min.js"></script>
+    <script type="application/javascript" src="simpleconverter.js"></script>
+</head>
+<body>
+<h3>Inch to CM</h3>
+<!-- user input -->
+<input type="text" id="inchText" />
+<!-- result -->
+<input id="cmResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="simpleConverter.inchToCM()"/>
+<br/>
+
+<h3>CM to Inch</h3>
+<!-- user input -->
+<input type="text" id="cmText" />
+<!-- result -->
+<input id="inchResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="simpleConverter.cmToInch()"/>
+</body>
+</html>

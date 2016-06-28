@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/javascript" src="math.min.js"></script>
+    <script type="application/javascript" src="string.min.js"></script>
+    <script type="application/javascript" src="simpleconverter.js"></script>
+</head>
+<body>
+<h3>Celsius to Fahrenheit</h3>
+<!-- user input -->
+<input type="text" id="celsiusText"/>
+<!-- result -->
+<input id="cResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="simpleConverter.celsiusToFahrenheit()"/>
+<br/>
+
+<h3>Fahrenheit to Celsius</h3>
+<!-- user input -->
+<input type="text" id="fahrenheitText" />
+<!-- result -->
+<input id="fResult" class="result" type="text" readonly />
+<br/>
+<input type="button" value="Convert" onclick="simpleConverter.fahrenheitToCelsius()"/>
+</body>
+</html>
